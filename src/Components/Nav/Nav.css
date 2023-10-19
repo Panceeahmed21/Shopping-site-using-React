@@ -1,0 +1,9 @@
+.Nav{
+
+        background-color: rgb(35, 35, 47) 
+     
+}
+.active{
+        color:rgb(106, 136, 190) !important;
+        font-weight: 600;
+}

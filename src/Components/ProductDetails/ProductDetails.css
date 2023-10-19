@@ -1,0 +1,9 @@
+.col-md-6 img{
+    max-height: 60vh !important;
+}
+
+.loading{
+    height: 100vh;
+    background-color: rgb(35, 35, 47) 
+
+}
