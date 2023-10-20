@@ -18,12 +18,11 @@ const Counter = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="d-flex justify-content-evenly ">
-             
-            <button className="btn btn-success" onClick={decreaseCounter}>
+              <button className="btn btn-success" onClick={decreaseCounter}>
                 -
               </button>
               <div>{count}</div>
-             
+
               <button className="btn btn-success" onClick={increaseCounter}>
                 +
               </button>
