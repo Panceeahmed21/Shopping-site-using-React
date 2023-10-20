@@ -2,15 +2,23 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import {} from "./Product.css";
-import Rating from 'react-rating-stars-component';
+import Rating from "react-rating-stars-component";
+import Loading from "../Loading";
 
 const Product = () => {
   const [Products, setProducts] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   const getProducts = () => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((json) => setProducts(json));
+      .then((json) => {
+        setProducts(json);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -19,8 +27,12 @@ const Product = () => {
 
   return (
     <>
-      {Products.map((prod) => {
-        return (
+      {isLoading ? (
+        <div className=" d-flex w-100 h-100  text-white ">
+          <Loading />
+        </div>
+      ) : Products ? (
+        Products.map((prod) => {
           <div className="col-md-4">
             <Card height="400px">
               <Card.Img
@@ -52,9 +64,11 @@ const Product = () => {
                 </Link>
               </Card.Body>
             </Card>
-          </div>
-        );
-      })}
+          </div>;
+        })
+      ) : (
+        <p>Item is not found</p>
+      )}
     </>
   );
 };
