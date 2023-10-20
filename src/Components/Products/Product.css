@@ -7,7 +7,7 @@
 .card {
     transition: all 2s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-overflow: hidden;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -16,4 +16,15 @@ overflow: hidden;
 
 .showDetails {
     color: rgb(99, 99, 127) !important
+}
+
+.loading {
+    height: 100vh;
+    background-color: rgb(35, 35, 47);
+    position: absolute;
+    top: -1%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
 }

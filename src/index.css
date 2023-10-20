@@ -12,12 +12,7 @@ li {
     margin: 0;
     box-sizing: border-box;
 }
- .Navbar{
-    background-color: rgb(99, 99, 127) !important;
- }
- 
-.loading{
-    height: 100vh;
-    background-color: rgb(35, 35, 47) 
 
+.Navbar {
+    background-color: rgb(99, 99, 127) !important;
 }

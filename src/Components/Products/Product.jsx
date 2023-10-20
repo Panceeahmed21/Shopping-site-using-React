@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import {} from "./Product.css";
 import Rating from "react-rating-stars-component";
 import Loading from "../Loading";
-import {} from "src/index.css"
+
 
 const Product = () => {
   const [Products, setProducts] = useState([]);
@@ -29,7 +29,7 @@ const Product = () => {
   return (
     <>
       {isLoading ? (
-        <div className=" d-flex w-100 h-100 loading text-white ">
+        <div className=" d-flex justify-content-center align-items-center loading text-white ">
           <Loading />
         </div>
       ) : Products ? (
