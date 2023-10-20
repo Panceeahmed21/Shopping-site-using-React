@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {} from "./ProductDetails.css";
 import Rating from "react-rating-stars-component";
+import Loading from "../Loading"
 
 function ProductDetails() {
   const { id } = useParams();
@@ -26,7 +27,7 @@ function ProductDetails() {
     <>
       {loading ? (
         <div className=" d-flex justify-content-center align-items-center loading text-white ">
-          <h2>Loading...</h2>
+          <Loading/>
         </div>
       ) : prodDetails ? (
         <div className="container py-5">
