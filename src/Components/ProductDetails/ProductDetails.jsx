@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {} from "./ProductDetails.css";
 import Rating from "react-rating-stars-component";
-import Loading from "../Loading";
+import Loading from "../../Loading/Loading";
 import {} from "./ProductDetails.css";
 
 function ProductDetails() {

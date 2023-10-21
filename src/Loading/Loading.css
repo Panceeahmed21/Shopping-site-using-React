@@ -1,0 +1,10 @@
+.loading {
+    height: 100vh;
+    background-color: rgb(35, 35, 47);
+    position: absolute;
+    top: -1%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}

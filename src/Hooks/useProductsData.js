@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+
 const useProductsData = (api) => {
   const [Products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -16,24 +17,9 @@ const useProductsData = (api) => {
         setLoading(false);
       }
     };
-    getProducts()
+    getProducts();
   }, []);
-  return [Products,loading,error]
+
+  return [loading, Products, error];
 };
 export default useProductsData;
-
-//   const getProducts = () => {
-//     fetch("https://fakestoreapi.com/products")
-//       .then((res) => res.json())
-//       .then((json) => {
-//         setProducts(json);
-//         setLoading(false);
-//       })
-//       .catch((error) => {
-//         setLoading(false);
-//       });
-//   };
-
-//   useEffect(() => {
-//     getProducts();
-//   }, []);
