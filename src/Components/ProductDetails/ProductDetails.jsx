@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import {} from "./ProductDetails.css";
 import Rating from "react-rating-stars-component";
 import Loading from "../Loading";
-import {} from "./ProductDetails.css"
+import {} from "./ProductDetails.css";
 
 function ProductDetails() {
   const { id } = useParams();
