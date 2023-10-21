@@ -57,12 +57,3 @@ const Product = () => {
 
 export default Product;
 
-// {isLoading ? (
-//   <div className=" d-flex justify-content-center align-items-center loading text-white ">
-//     <Loading />
-//   </div>
-// ) : Products ? (
-
-// ) : (
-//   <p>Item is not found</p>
-// )}
