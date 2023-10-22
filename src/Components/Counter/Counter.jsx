@@ -25,7 +25,9 @@ const Counter = () => {
               <button className="btn btn-success" onClick={decreaseCounter}>
                 -
               </button>
-              <h4>{count} <span className="text-success">EGP</span></h4>
+              <h4>
+                {count} <span className="text-success">EGP</span>
+              </h4>
               <button className="btn btn-success" onClick={increaseCounter}>
                 +
               </button>
