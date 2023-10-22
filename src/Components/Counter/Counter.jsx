@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { increment } from "../../redux/counterSlice";
+import { decrement } from "../../redux/counterSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counter.counter);
+  const dispatch = useDispatch();
   const increaseCounter = () => {
-    if (count >= 0 && count < 10) {
-      setCount(count + 1);
+    {
+      dispatch(increment());
     }
   };
   const decreaseCounter = () => {
     if (count > 0) {
-      setCount(count - 1);
+      dispatch(decrement());
     }
   };
   return (
@@ -17,12 +20,12 @@ const Counter = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-md-12">
+            <h3 className="text-center"> Donate to us </h3>
             <div className="d-flex justify-content-evenly ">
               <button className="btn btn-success" onClick={decreaseCounter}>
                 -
               </button>
-              <div>{count}</div>
-
+              <h4>{count} <span className="text-success">EGP</span></h4>
               <button className="btn btn-success" onClick={increaseCounter}>
                 +
               </button>

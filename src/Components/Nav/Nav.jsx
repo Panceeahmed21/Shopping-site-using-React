@@ -23,7 +23,7 @@ const NavBar = () => {
                 <NavLink to="/about">About</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/counter">Counter</NavLink>
+                <NavLink to="/counter">Donate</NavLink>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
