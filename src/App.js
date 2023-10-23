@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import About from "./Components/About/About";
 import Counter from "./Components/Counter/Counter";
+import SignIn from "./Components/Signin/SignIn";
+import Signup from "./Components/Signup/Signup";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/counter" element={<Counter />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/register" element={<Signup />} />
       </Routes>
     </Router>
   );
